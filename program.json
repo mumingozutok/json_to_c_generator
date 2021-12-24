@@ -1,0 +1,46 @@
+{
+    "code": [
+        {
+            "Action": "CREATE",
+            "fb": {
+                "name": "TIMER_CYCLIC",
+                "type": "TIMER_CYCLIC"
+            }
+        },
+        {
+            "Action": "WRITE",
+            "connection": {
+                "source": "1000",
+                "destination": "TIMER_CYCLIC.DON"
+            }
+        },
+        {
+            "Action": "WRITE",
+            "connection": {
+                "source": "250",
+                "destination": "TIMER_CYCLIC.DOFF"
+            }
+        },
+        {
+            "Action": "CREATE",
+            "fb": {
+                "name": "DOUT",
+                "type": "DOUT"
+            }
+        },
+        {
+            "Action": "WRITE",
+            "connection": {
+                "source": "0",
+                "destination": "DOUT.CH"
+            }
+        },
+        {
+            "Action": "CREATE",
+            "connection": {
+                "source": "TIMER_CYCLIC.OUT",
+                "destination": "DOUT.VAL"
+            }
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+appdirs==1.4.4
+cgen==2020.1
+numpy==1.21.5
+pytools==2021.2.9

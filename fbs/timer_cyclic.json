@@ -1,0 +1,23 @@
+{
+    "name": "fb_timer_cyclic",
+    "return_val": "void",
+    "inputs": [
+        {
+            "name": "ton",
+            "type": "uint32_t"
+        },
+        {
+            "name": "toff",
+            "type": "uint32_t"
+        }
+    ],
+
+    "outputs": [
+        {
+            "name": "out",
+            "type": "bool"
+        }
+    ],
+
+    "body": "codes\\timer_cyclic.c"
+}

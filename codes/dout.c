@@ -1,0 +1,5 @@
+void body(){
+    //@@@
+    /*dout behaviour*/
+    //@@@
+}
